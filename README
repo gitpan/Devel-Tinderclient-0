@@ -1,0 +1,28 @@
+Tinderbox client Version 1.1p (perl version 0.01)
+
+By Zach Lipton <zach@zachlipton.com>
+
+
+This client is designed for the testing of perl. To use, choose between
+a perl5 tinderbox and a perl6 tinderbox.
+
+For perl5: cp sample_config/Tinderconfig.rsync.pm Tinderconfig.pm
+
+For perl6: cp sample_config/Tinderconfig.cvs.pm Tinderconfig.pm
+
+Then edit the Tinderconfig.pm file to reflect your setup.
+
+Just run tinderbox.pl like this to keep it running all the time:
+
+nohup ./tinderbox.pl
+
+Simply look up the process id using ps and use kill if you wish to stop
+the Tinderbox. It will automatically pick up any config file changes so
+there is no need to restart if you change your configuration.
+
+Note that these scripts are covered under the MPL/GPL/LGPL tri-license
+as indicated in each file.
+
+Happy hacking!
+
+Zach
